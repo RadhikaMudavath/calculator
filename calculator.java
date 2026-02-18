@@ -1,13 +1,13 @@
 class calculator {
     public static void main(String args[]) {
 
-        int a = 10;
-        int b = 5;
+        int n1= 10;
+        int n2= 5;
 
-        System.out.println("Addition = " + (a + b));
-        System.out.println("Subtraction = " + (a - b));
-        System.out.println("Multiplication = " + (a * b));
-        System.out.println("Division = " + (a / b));
-        System.out.println("Modulus = " + (a % b));
+        System.out.println("Addition = " + (n1 + n2));
+        System.out.println("Subtraction = " + (n1 - n2));
+        System.out.println("Multiplication = " + (n1 * n2));
+        System.out.println("Division = " + (n1 / n2));
+        System.out.println("Modulus = " + (n1 % n2));
     }
 }
