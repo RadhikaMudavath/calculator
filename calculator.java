@@ -1,44 +1,13 @@
-import java.util.Scanner;
-
 class Calculator {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String args[]) {
 
-        System.out.println("Enter first number:");
-        double num1 = sc.nextDouble();
+        int a = 10;
+        int b = 5;
 
-        System.out.println("Enter operator (+, -, *, /):");
-        char op = sc.next().charAt(0);
-
-        System.out.println("Enter second number:");
-        double num2 = sc.nextDouble();
-
-        double result = 0;
-
-        switch(op) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
-                if(num2 != 0)
-                    result = num1 / num2;
-                else {
-                    System.out.println("Cannot divide by zero");
-                    return;
-                }
-                break;
-            default:
-                System.out.println("Invalid operator");
-                return;
-        }
-
-        System.out.println("Result: " + result);
-        sc.close();
+        System.out.println("Addition = " + (a + b));
+        System.out.println("Subtraction = " + (a - b));
+        System.out.println("Multiplication = " + (a * b));
+        System.out.println("Division = " + (a / b));
+        System.out.println("Modulus = " + (a % b));
     }
 }
